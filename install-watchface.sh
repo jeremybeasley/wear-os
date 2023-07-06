@@ -5,8 +5,8 @@
 # echo "Hello, world!"
 
 adb disconnect
-vared -p "Last 3 digits of watch IP address: " -c last3 
-ip=$(echo "192.168.4.$last3")
+vared -p "Last 6 digits of watch IP address: " -c last6 
+ip=$(echo "192.168.$last6")
 
 adb connect $ip
 sleep 10
